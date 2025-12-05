@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Login System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div id="navbar">
+    <a href="index.html" id="navbarlog"> 
+      <i class="fa-solid fa-circle-user"></i><b> Sign up </b>
+    </a>
+    <a href="Attendance.html" id="navbaratt"> 
+      <i class="fas fa-pen-to-square"></i><b> Attendance</b>
+    </a>
+  </div>
+
+  <div id="border"></div>
+  <div id="secondborder"></div>
+  
+  <div id="logindiv">
+    <h1><b><u>°•°Sign In°•°</u></b></h1> 
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required placeholder="Enter Username">
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="Enter Password">
+      
+      <div id="message"></div>
+      <br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

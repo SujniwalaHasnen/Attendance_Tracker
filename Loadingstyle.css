@@ -1,0 +1,171 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #1a5f61, #0a3a3b);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    /* Loading container */
+    .loader-container {
+      text-align: center;
+      max-width: 90%;
+      padding: 30px;
+      z-index: 10;
+    }
+    
+    /* Logo and title */
+    .app-logo {
+      font-size: 5rem;
+      margin-bottom: 20px;
+      color: #00ffcc;
+      text-shadow: 0 0 20px rgba(0, 255, 204, 0.7);
+      animation: pulse 2s infinite alternate;
+    }
+    
+    .app-title {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 15px #00ffff;
+      letter-spacing: 2px;
+    }
+    
+    /* Progress bar container */
+    .progress-container {
+      width: 100%;
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 50px;
+      margin: 20px auto;
+      overflow: hidden;
+      height: 30px;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Progress bar */
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #00b3b3, #00ffcc, #00b3b3);
+      border-radius: 50px;
+      position: relative;
+      transition: width 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+    }
+    
+    /* Progress animation */
+    .progress-bar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      animation: shimmer 2s infinite;
+    }
+    
+    /* Status text */
+    .status-text {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      min-height: 2rem;
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.7);
+    }
+    
+    /* Loading animation */
+    .loading-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    
+    .dot {
+      width: 20px;
+      height: 20px;
+      background: #00ffcc;
+      border-radius: 50%;
+      animation: bounce 1.5s infinite ease-in-out;
+      box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+    }
+    
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+    
+    /* Animations */
+    @keyframes pulse {
+      0% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    
+    @keyframes borderGlow {
+      0% { box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); }
+      50% { box-shadow: 0 0 30px rgba(0, 255, 204, 0.8); }
+      100% { box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); }
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .app-logo {
+        font-size: 3.5rem;
+      }
+      
+      .app-title {
+        font-size: 2rem;
+      }
+      
+      .status-text {
+        font-size: 1.2rem;
+      }
+      
+      .dot {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .app-logo {
+        font-size: 2.5rem;
+      }
+      
+      .app-title {
+        font-size: 1.5rem;
+      }
+      
+      .progress-container {
+        height: 20px;
+      }
+      
+      .status-text {
+        font-size: 1rem;
+      }
+    }

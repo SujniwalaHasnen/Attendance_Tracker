@@ -1,0 +1,459 @@
+#navbaratt {
+  display: inline-flex !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a5f61, #0a3a3b);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background: rgba(170, 187, 187, 0.95);
+  padding: 0 20px;
+  border-bottom: 5px solid #222;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.8rem;
+  border: 4px solid #222;
+  margin: 0 30px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #acb3bf, #8a9099);
+  padding: 10px 25px;
+  transition: all 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#navbar a:hover {
+  background: linear-gradient(to bottom, #00ffcc, #00cc99);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#navbar a i {
+  font-size: 1.5rem;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 20px;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 20px auto;
+  text-align: center;
+  text-shadow: 0 0 15px #00ffff;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: 4px solid #00ffff;
+  display: inline-block;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.3); }
+  50% { box-shadow: 0 0 100px rgba(0, 255, 255, 0.7); }
+  100% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.3); }
+}
+
+#headder {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border: 4px solid #00ffff;
+  border-radius: 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#headder p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#date, #subject, #lecture {
+  background: rgba(172, 179, 191, 0.9);
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 1.4rem;
+  color: #222;
+  transition: all 0.3s;
+  outline: none;
+}
+
+#date:focus, #subject:focus, #lecture:focus {
+  border-color: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+  transform: scale(1.05);
+}
+
+#subject, #lecture {
+  min-width: 200px;
+}
+
+#submitbutton {
+  background: linear-gradient(to bottom, #00ffcc, #00cc99);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#submitbutton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 255, 204, 0.5);
+}
+
+content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+#seconddiv {
+  width: 100%;
+  max-width: 1400px;
+  overflow-x: auto;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 4px solid #00ffff;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#table th {
+  background: linear-gradient(to right, #00b3b3, #008080);
+  font-size: 1.6rem;
+  padding: 20px 15px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#table tr {
+  border-bottom: 2px solid #00ffff;
+  transition: all 0.3s;
+}
+
+#table tr:nth-child(even) {
+  background: rgba(50, 50, 50, 0.3);
+}
+
+#table tr:hover {
+  background: rgba(0, 150, 150, 0.3);
+  transform: scale(1.01);
+}
+
+#table td {
+  padding: 15px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+#table td:first-child {
+  font-weight: bold;
+  text-align: center;
+}
+
+#table td:nth-child(2) {
+  min-width: 300px;
+}
+
+#table label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+#table label:hover {
+  color: #00ffcc;
+}
+
+#table input[type="radio"] {
+  width: 25px;
+  height: 25px;
+  accent-color: #00ffcc;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #008080, #006666);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.4rem;
+  border-top: 4px solid #00ffff;
+  margin-top: 30px;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer per {
+  display: block;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+    padding: 12px 30px;
+  }
+  
+  #headder {
+    padding: 15px;
+  }
+  
+  #headder p {
+    font-size: 1.5rem;
+  }
+  
+  #date, #subject, #lecture {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+  
+  #submitbutton {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+  }
+  
+  #table th {
+    font-size: 1.4rem;
+    padding: 15px 10px;
+  }
+  
+  #table td {
+    font-size: 1.1rem;
+    padding: 12px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  #navbar a {
+    font-size: 1.4rem;
+    padding: 8px 20px;
+    margin: 0 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 15px auto;
+  }
+  
+  #headder {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  #headder p {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  #date, #subject, #lecture {
+    width: 100%;
+  }
+  
+  #submitbutton {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  #table th {
+    font-size: 1.2rem;
+    padding: 12px 8px;
+  }
+  
+  #table td {
+    font-size: 1rem;
+    padding: 10px 8px;
+  }
+  
+  #table label {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  #table input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    height: 70px;
+  }
+  
+  #navbar a {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    margin: 0 5px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    width: 95%;
+  }
+  
+  #headder p {
+    font-size: 1.2rem;
+  }
+  
+  #date, #subject, #lecture {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+  
+  #submitbutton {
+    font-size: 1.3rem;
+    padding: 8px;
+  }
+  
+  #table th {
+    font-size: 1rem;
+    padding: 10px 5px;
+  }
+  
+  #table td {
+    font-size: 0.9rem;
+    padding: 8px 5px;
+  }
+  
+  #table td:nth-child(2) {
+    min-width: auto;
+  }
+  
+  #table label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  footer {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #navbar {
+    height: 60px;
+    padding: 0 10px;
+  }
+  
+  #navbar a {
+    font-size: 0.9rem;
+    padding: 5px 8px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    padding: 8px 15px;
+  }
+  
+  #headder p {
+    font-size: 1rem;
+  }
+  
+  #table th {
+    font-size: 0.9rem;
+  }
+  
+  #table td {
+    font-size: 0.8rem;
+  }
+  
+  footer {
+    font-size: 1rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00b3b3, #008080);
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #00cccc, #009999);
+}

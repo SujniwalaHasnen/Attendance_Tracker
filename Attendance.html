@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="navbar">
+    <a href="index.html" id="navbarlog"> <i class="fa-solid fa-circle-user"></i><b> Sign up </b></a>
+    <a href="Attendance.html" id="navbaratt"> <i class="fas fa-pen-to-square"></i><b> Attendance</b></a>
+  </div>
+  <form>
+  <header>
+  <h1><B> Attendance Tracker </B></h1>
+  <div id="headder">
+    <p> DATE <i class="fas fa-calendar-days"></i> :</p>
+    <input type="date" placeholder="select the date" id="date" required="required">
+    <p> SUBJECTS <i class="fas fa-book"></i> :</p>
+    <select name="subject" id="subject">
+      <option value="none">None</option>
+       <option value="DRA">DRA</option>
+       <option value="PYTHON">PYTHON</option>
+       <option value="JAVA">JAVA</option>
+    </select>
+    <p>Number of lecture <i class="fa-solid fa-circle-right"></i> :</p>
+    <select name="lecture" id="lecture">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <button id="submitbutton" type="submit"><B>SUBMIT</B></button>
+    </div>
+    </header>
+    <br>
+    <br>
+    <content>
+    <div id="seconddiv">
+    <table id="table">
+        <tr>
+            <th><b>Roll No</b></th>
+            <th><b>Students Name</b></th>
+            <th><b>Status</b></th>
+        </tr>
+         <tr><td>01</td><td>AHIR DIYAKUMARI RANCHHODBHAI</td><td><label><input type="radio" name="status1" required="required">Present</label><label><input type="radio" name="status1">Absent</label></td></tr>
+        <tr><td>02</td><td>ANSARI SIFA SELEMANBHAI</td><td><label><input type="radio" name="status2" required="required">Present</label><label><input type="radio" name="status2">Absent</label></td></tr>
+        <tr><td>03</td><td>BABARIYA RIYA RAKESHBHAI</td><td><label><input type="radio" name="status3" required="required">Present</label><label><input type="radio" name="status3">Absent</label></td></tr>
+        <tr><td>04</td><td>BHATIYA PRACHI HARSHADBHAI</td><td><label><input type="radio" name="status4" required="required">Present</label><label><input type="radio" name="status4">Absent</label></td></tr>
+        <tr><td>05</td><td>BHATT NILKANTH BHARATBHAI</td><td><label><input type="radio" name="status5" required="required">Present</label><label><input type="radio" name="status5">Absent</label></td></tr>
+        <tr><td>06</td><td>BHATT RAINA NILESHBHAI</td><td><label><input type="radio" name="status6" required="required">Present</label><label><input type="radio" name="status6">Absent</label></td></tr>
+        <tr><td>07</td><td>CHANAWALA VRAJ SHAILESH</td><td><label><input type="radio" name="status7" required="required">Present</label><label><input type="radio" name="status7">Absent</label></td></tr>
+        <tr><td>08</td><td>CHAUHAN VRAJKUMAR NARESHKUMAR</td><td><label><input type="radio" name="status8" required="required">Present</label><label><input type="radio" name="status8">Absent</label></td></tr>
+        <tr><td>09</td><td>DABHI RUSHITA VINODBHI</td><td><label><input type="radio" name="status9" required="required">Present</label><label><input type="radio" name="status9">Absent</label></td></tr>
+        <tr><td>10</td><td>DOSHI MANSHIBEN KAUSHIKKUMAR</td><td><label><input type="radio" name="status10" required="required">Present</label><label><input type="radio" name="status10">Absent</label></td></tr>
+        <tr><td>11</td><td>DUDHAT MANSI NARESHBHAI</td><td><label><input type="radio" name="status11" required="required">Present</label><label><input type="radio" name="status11">Absent</label></td></tr>
+        <tr><td>12</td><td>FRUITWALA MUHAMMAD SAAD SAMAD</td><td><label><input type="radio" name="status12" required="required">Present</label><label><input type="radio" name="status12">Absent</label></td></tr>
+        <tr><td>13</td><td>GHADIYA GRISITA MUKESHBHAI</td><td><label><input type="radio" name="status13" required="required">Present</label><label><input type="radio" name="status13">Absent</label></td></tr>
+        <tr><td>14</td><td>GOHIL YUVRAJSINH ROHITSINH</td><td><label><input type="radio" name="status14" required="required">Present</label><label><input type="radio" name="status14">Absent</label></td></tr>
+        <tr><td>15</td><td>GOSWAMI BHAVIKABEN GHANSHYAMGIR</td><td><label><input type="radio" name="status15" required="required">Present</label><label><input type="radio" name="status15">Absent</label></td></tr>
+        <tr><td>16</td><td>GOSWAMI KARTIK SAMEERBHAI</td><td><label><input type="radio" name="status16" required="required">Present</label><label><input type="radio" name="status16">Absent</label></td></tr>
+        <tr><td>17</td><td>JADAV SHWETA ARJUNBHAI</td><td><label><input type="radio" name="status17" required="required">Present</label><label><input type="radio" name="status17">Absent</label></td></tr>
+        <tr><td>18</td><td>JAMBU SUJALKUMAR NATVARBHAI</td><td><label><input type="radio" name="status18" required="required">Present</label><label><input type="radio" name="status18">Absent</label></td></tr>
+        <tr><td>19</td><td>KAPADIYA YUSHRA ASIFBHAI</td><td><label><input type="radio" name="status19" required="required">Present</label><label><input type="radio" name="status19">Absent</label></td></tr>
+        <tr><td>20</td><td>KUMAWAT MOHIT GOPALLAL</td><td><label><input type="radio" name="status20" required="required">Present</label><label><input type="radio" name="status20">Absent</label></td></tr>
+        <tr><td>21</td><td>LAKDE RAHULBHAI YEDABHAI</td><td><label><input type="radio" name="status21" required="required">Present</label><label><input type="radio" name="status21">Absent</label></td></tr>
+        <tr><td>22</td><td>LANGOTA MUNTAZIR MUSTAK</td><td><label><input type="radio" name="status22" required="required">Present</label><label><input type="radio" name="status22">Absent</label></td></tr>
+        <tr><td>23</td><td>LARYA MOHAMMED ASFAK</td><td><label><input type="radio" name="status23" required="required">Present</label><label><input type="radio" name="status23">Absent</label></td></tr>
+        <tr><td>24</td><td>LIMBACHIYA NIDHI PIYUSHBHAI</td><td><label><input type="radio" name="status24" required="required">Present</label><label><input type="radio" name="status24">Absent</label></td></tr>
+        <tr><td>25</td><td>MACHHI DIVYABEN ATULKUMAR</td><td><label><input type="radio" name="status25" required="required">Present</label><label><input type="radio" name="status25">Absent</label></td></tr>
+        <tr><td>26</td><td>MAHANT ARYANKUMAR RAJESHBHAI</td><td><label><input type="radio" name="status26" required="required">Present</label><label><input type="radio" name="status26">Absent</label></td></tr>
+        <tr><td>27</td><td>MAKAWANA BINDIYA PRAVINBHAI</td><td><label><input type="radio" name="status27" required="required">Present</label><label><input type="radio" name="status27">Absent</label></td></tr>
+        <tr><td>28</td><td>MAKWANA BHUMIKABEN RAJESHBHAI</td><td><label><input type="radio" name="status28" required="required">Present</label><label><input type="radio" name="status28">Absent</label></td></tr>
+        <tr><td>29</td><td>MANDAL KHUSHI JAYKISHOR</td><td><label><input type="radio" name="status29" required="required">Present</label><label><input type="radio" name="status29">Absent</label></td></tr>
+        <tr><td>30</td><td>MANDVIYA JATSHVINE DIPAKBHAI</td><td><label><input type="radio" name="status30" required="required">Present</label><label><input type="radio" name="status30">Absent</label></td></tr>
+        <tr><td>31</td><td>MANJARA FAIZAN HARUN</td><td><label><input type="radio" name="status31" required="required">Present</label><label><input type="radio" name="status31">Absent</label></td></tr>
+        <tr><td>32</td><td>ΝΑΙ RUDRA KANUBHAI</td><td><label><input type="radio" name="status32" required="required">Present</label><label><input type="radio" name="status32">Absent</label></td></tr>
+        <tr><td>33</td><td>PAREKH TRUSHNA RAKESH BHAI</td><td><label><input type="radio" name="status33" required="required">Present</label><label><input type="radio" name="status33">Absent</label></td></tr>
+        <tr><td>34</td><td>PARMAR KRUNAL HARSHADBHAI</td><td><label><input type="radio" name="status34" required="required">Present</label><label><input type="radio" name="status34">Absent</label></td></tr>
+        <tr><td>35</td><td>PARMAR TANUSHREE DINESHBHAI</td><td><label><input type="radio" name="status35" required="required">Present</label><label><input type="radio" name="status35">Absent</label></td></tr>
+        <tr><td>36</td><td>PARMAR URVASHI VIJAYBHAI</td><td><label><input type="radio" name="status36" required="required">Present</label><label><input type="radio" name="status36">Absent</label></td></tr>
+        <tr><td>37</td><td>PATEL ABDULAZIZ IRFAN</td><td><label><input type="radio" name="status37" required="required">Present</label><label><input type="radio" name="status37">Absent</label></td></tr>
+        <tr><td>38</td><td>PATEL CHAITANYA HITESHBHAI</td><td><label><input type="radio" name="status38" required="required">Present</label><label><input type="radio" name="status38">Absent</label></td></tr>
+        <tr><td>39</td><td>PATEL DIYA ASHOKBHAI</td><td><label><input type="radio" name="status39" required="required">Present</label><label><input type="radio" name="status39">Absent</label></td></tr>
+        <tr><td>40</td><td>PATEL HARSHKUMAR VIJAYBHAI</td><td><label><input type="radio" name="status40" required="required">Present</label><label><input type="radio" name="status40">Absent</label></td></tr>
+        <tr><td>41</td><td>PATEL NEELKUMAR RAKESH BHAI</td><td><label><input type="radio" name="status41" required="required">Present</label><label><input type="radio" name="status41">Absent</label></td></tr>
+        <tr><td>42</td><td>PATEL NEHABEN NARENDRABHAI</td><td><label><input type="radio" name="status42" required="required">Present</label><label><input type="radio" name="status42">Absent</label></td></tr>
+        <tr><td>43</td><td>PATEL NIRDOSHBHAI PRVINBHAI</td><td><label><input type="radio" name="status43" required="required">Present</label><label><input type="radio" name="status43">Absent</label></td></tr>
+        <tr><td>44</td><td>PATEL OM KEYULBHAI</td><td><label><input type="radio" name="status44" required="required">Present</label><label><input type="radio" name="status44">Absent</label></td></tr>
+        <tr><td>45</td><td>PATEL PRIYANSHIBEN JAGDISHBHAI</td><td><label><input type="radio" name="status45" required="required">Present</label><label><input type="radio" name="status45">Absent</label></td></tr>
+        <tr><td>46</td><td>PATEL PURVABEN GAUTAM BHAI</td><td><label><input type="radio" name="status46" required="required">Present</label><label><input type="radio" name="status46">Absent</label></td></tr>
+        <tr><td>47</td><td>PATEL RUDRAKUMAR DAT TUBHAI</td><td><label><input type="radio" name="status47" required="required">Present</label><label><input type="radio" name="status47">Absent</label></td></tr>
+        <tr><td>48</td><td>POOJARY KANIKA BABLU</td><td><label><input type="radio" name="status48" required="required">Present</label><label><input type="radio" name="status48">Absent</label></td></tr>
+        <tr><td>49</td><td>PRAJAPATI DIYABAHEN JAGDISHBHAI</td><td><label><input type="radio" name="status49" required="required">Present</label><label><input type="radio" name="status49">Absent</label></td></tr>
+        <tr><td>50</td><td>PRAJAPATI HIMESH VASANTBHAI</td><td><label><input type="radio" name="status50" required="required">Present</label><label><input type="radio" name="status50">Absent</label></td></tr>
+        <tr><td>51</td><td>PRAJAPATI ISHA DHARMENDRABHAI</td><td><label><input type="radio" name="status51" required="required">Present</label><label><input type="radio" name="status51">Absent</label></td></tr>
+        <tr><td>52</td><td>PRAJAPATI KRISHNA VINODBHAI</td><td><label><input type="radio" name="status52" required="required">Present</label><label><input type="radio" name="status52">Absent</label></td></tr>
+        <tr><td>53</td><td>PRAJAPATI SOHAM SHREERAM</td><td><label><input type="radio" name="status53" required="required">Present</label><label><input type="radio" name="status53">Absent</label></td></tr>
+        <tr><td>54</td><td>RANA DHRUV YOGESHBHAI</td><td><label><input type="radio" name="status54" required="required">Present</label><label><input type="radio" name="status54">Absent</label></td></tr>
+        <tr><td>55</td><td>RANA MAHI HIRENBHAI</td><td><label><input type="radio" name="status55" required="required">Present</label><label><input type="radio" name="status55">Absent</label></td></tr>
+        <tr><td>56</td><td>RANA NENCY SURENDRASINH</td><td><label><input type="radio" name="status56" required="required">Present</label><label><input type="radio" name="status56">Absent</label></td></tr>
+        <tr><td>57</td><td>RANA TAKSH DHARAMESHBAHI</td><td><label><input type="radio" name="status57" required="required">Present</label><label><input type="radio" name="status57">Absent</label></td></tr>
+        <tr><td>58</td><td>RAVAL ADITYA JAGDISHBHAI</td><td><label><input type="radio" name="status58" required="required">Present</label><label><input type="radio" name="status58">Absent</label></td></tr>
+        <tr><td>59</td><td>ROHIT ANSH HASMUKHBHAI</td><td><label><input type="radio" name="status59" required="required">Present</label><label><input type="radio" name="status59">Absent</label></td></tr>
+        <tr><td>60</td><td>SHAH RAJ DARSHANBHAI</td><td><label><input type="radio" name="status60" required="required">Present</label><label><input type="radio" name="status60">Absent</label></td></tr>
+        <tr><td>61</td><td>SHAIKH JUVERIYA SOKATHUSEN</td><td><label><input type="radio" name="status61" required="required">Present</label><label><input type="radio" name="status61">Absent</label></td></tr>
+        <tr><td>62</td><td>SHAIKH MOHD ADNAN JAODDIN SHAIKH</td><td><label><input type="radio" name="status62" required="required">Present</label><label><input type="radio" name="status62">Absent</label></td></tr>
+        <tr><td>63</td><td>SHAIKH TABASSUM BANU ABDUL MUNAF</td><td><label><input type="radio" name="status63" required="required">Present</label><label><input type="radio" name="status63">Absent</label></td></tr>
+        <tr><td>64</td><td>SINGH ANKIT SINGH BACHCHU</td><td><label><input type="radio" name="status64" required="required">Present</label><label><input type="radio" name="status64">Absent</label></td></tr>
+        <tr><td>65</td><td>SINGH AYUSH MANOJ</td><td><label><input type="radio" name="status65" required="required">Present</label><label><input type="radio" name="status65">Absent</label></td></tr>
+        <tr><td>66</td><td>SOLANKI HARSHILKUMAR JAYESHBHAI</td><td><label><input type="radio" name="status66" required="required">Present</label><label><input type="radio" name="status66">Absent</label></td></tr>
+        <tr><td>67</td><td>SOLANKI NISHA DHARMENDEASINH</td><td><label><input type="radio" name="status67" required="required">Present</label><label><input type="radio" name="status67">Absent</label></td></tr>
+        <tr><td>68</td><td>SONI POOJA SUNIL</td><td><label><input type="radio" name="status68" required="required">Present</label><label><input type="radio" name="status68">Absent</label></td></tr>
+        <tr><td>69</td><td>SONI RIDDHI RATANAKUMAR</td><td><label><input type="radio" name="status69" required="required">Present</label><label><input type="radio" name="status69">Absent</label></td></tr>
+        <tr><td>70</td><td>SUJNIWALA MO.HASNEN ZAHID AHMED</td><td><label><input type="radio" name="status70" required="required">Present</label><label><input type="radio" name="status70">Absent</label></td></tr>
+        <tr><td>71</td><td>SURTI MEETKUMAR RAKESHBHAI</td><td><label><input type="radio" name="status71" required="required">Present</label><label><input type="radio" name="status71">Absent</label></td></tr>
+        <tr><td>72</td><td>THAKUR APEKSHA HARESH</td><td><label><input type="radio" name="status72" required="required">Present</label><label><input type="radio" name="status72">Absent</label></td></tr>
+        <tr><td>73</td><td>UGHRATDAR NAZMINA AHMED</td><td><label><input type="radio" name="status73" required="required">Present</label><label><input type="radio" name="status73">Absent</label></td></tr>
+        <tr><td>74</td><td>VAGHELA DEV KUMAR BAKUL</td><td><label><input type="radio" name="status74" required="required">Present</label><label><input type="radio" name="status74">Absent</label></td></tr>
+        <tr><td>75</td><td>VALAND JANKIBEN GANESHBHAI</td><td><label><input type="radio" name="status75" required="required">Present</label><label><input type="radio" name="status75">Absent</label></td></tr>
+        <tr><td>76</td><td>VARIA ANJALIBEN PRAKASHKUMAR</td><td><label><input type="radio" name="status76" required="required">Present</label><label><input type="radio" name="status76">Absent</label></td></tr>
+        <tr><td>77</td><td>VASAVA MEETKUMAR YOGESH BHAI</td><td><label><input type="radio" name="status77" required="required">Present</label><label><input type="radio" name="status77">Absent</label></td></tr>
+        <tr><td>78</td><td>VASAVA ROHANKUMAR SHAILESHBHAI</td><td><label><input type="radio" name="status78" required="required">Present</label><label><input type="radio" name="status78">Absent</label></td></tr>
+        <tr><td>79</td><td>VASAVA SUHANIBEN KIRANBHAI</td><td><label><input type="radio" name="status79" required="required">Present</label><label><input type="radio" name="status79">Absent</label></td></tr>
+        <tr><td>80</td><td>VASAVA VISHALKUMAR BHAGVANBHAI</td><td><label><input type="radio" name="status80" required="required">Present</label><label><input type="radio" name="status80">Absent</label></td></tr>
+        <tr><td>81</td><td>VASHI HEMANGKUMAR JAGDISH</td><td><label><input type="radio" name="status81" required="required">Present</label><label><input type="radio" name="status81">Absent</label></td></tr>
+        <tr><td>82</td><td>WAGHWANI NISHI MANISH</td><td><label><input type="radio" name="status82" required="required">Present</label><label><input type="radio" name="status82">Absent</label></td></tr>
+        <tr><td>83</td><td>YADAV ANURAG KUNDAN</td><td><label><input type="radio" name="status83" required="required">Present</label><label><input type="radio" name="status83">Absent</label></td></tr>
+         <tr><td>84</td><td>LALKA HARSH HIRENBHAI</td><td><label><input type="radio" name="status83" required="required">Present</label><label><input type="radio" name="status83">Absent</label></td></tr>
+    </table>
+  </div>
+  </content>
+  <br>
+  <br>
+  <footer>
+    <per>MADE WITH &hearts; BY SUJNIWALA MOHAMMED HASNEN.</per>
+  </footer>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
